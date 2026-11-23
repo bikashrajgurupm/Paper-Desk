@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paper Desk</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div class="row"><h1>Paper Desk</h1><span class="stamp">PAPER MONEY</span></div>
+    <div class="row">
+      <select id="pfSel" class="pfsel" aria-label="Portfolio"></select>
+      <button data-a="newpf">New portfolio</button>
+      <button id="btnRefresh" data-a="refresh">Refresh prices</button>
+      <button class="primary" data-a="wallet">Add money</button>
+    </div>
+  </div>
+  <div id="status" class="muted" style="font-size:13px;margin:-4px 0 10px;min-height:18px"></div>
+
+  <div class="card" id="hero"></div>
+
+  <div class="tabs" id="tabs">
+    <button class="tab" data-a="tab" data-t="search">Search</button>
+    <button class="tab" data-a="tab" data-t="markets">Watchlist</button>
+    <button class="tab" data-a="tab" data-t="options">Options</button>
+    <button class="tab" data-a="tab" data-t="futures">Futures</button>
+    <button class="tab" data-a="tab" data-t="portfolio">Portfolio</button>
+    <button class="tab" data-a="tab" data-t="activity">Activity</button>
+    <button class="tab" data-a="tab" data-t="admin">Admin</button>
+  </div>
+  <div id="view"></div>
+</div>
+<div id="modalRoot"></div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
